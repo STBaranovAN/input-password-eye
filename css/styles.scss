@@ -1,0 +1,36 @@
+input[data-password-eye] {
+    font-family: sans-serif;
+    padding-right: 42px;
+}
+
+.password-eye {
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+    top: 8px;
+    right: 6px;
+    background: url('../images/ic-eye-hide.svg') no-repeat center;
+    z-index: 1;
+
+    &.password-eye-hide {
+        background: url('../images/ic-eye-show.svg') no-repeat center;
+    }
+}
+
+.text_input[data-password-eye] {
+    padding-right: 60px;
+}
+
+.form-group {
+    .password-eye {
+        top: 26px;
+        right: 22px;
+    }
+
+    .has-p-success, .has-p-error {
+        .password-eye {
+            right: 42px;
+        }
+    }
+}
